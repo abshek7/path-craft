@@ -1,5 +1,7 @@
+"use client";
+
 import { SignIn, useUser } from "@clerk/nextjs";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 export default function Page() {
@@ -23,7 +25,7 @@ export default function Page() {
           />
           <div className="hidden lg:relative lg:block lg:p-12">
             <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-              Welcome to COURSIFY 
+              Welcome to COURSIFY
             </h2>
             <p className="mt-4 text-white/90">
               Coursify is a Next.js web app that lets you create a learning experience 
